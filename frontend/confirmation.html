@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Confirmed — MVS Aqua</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a class="navbar-brand" href="index.html"><div class="navbar-logo">🐟</div><h1>MVS <span>Aqua</span></h1></a>
+  </div>
+</nav>
+<div class="container" style="padding:80px 20px;text-align:center">
+  <div style="font-size:5rem;margin-bottom:16px">🎉</div>
+  <h1 style="color:var(--primary);margin-bottom:8px">Order Placed Successfully!</h1>
+  <p style="color:#666;font-size:1.1rem;margin-bottom:8px" id="order-msg">Your order has been sent to MVS Aqua via WhatsApp.</p>
+  <p style="color:#888;font-size:0.95rem">Order ID: <strong id="order-id">—</strong></p>
+  <div class="alert alert-success" style="max-width:480px;margin:24px auto">
+    ✅ Our team will confirm your order and share payment details on WhatsApp within a few minutes.
+  </div>
+  <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+    <a href="tracking.html" class="btn btn-primary" id="track-btn">Track My Order</a>
+    <a href="shop.html" class="btn btn-outline">Continue Shopping</a>
+  </div>
+</div>
+<script src="assets/js/script.js"></script>
+<script>
+  const params = new URLSearchParams(location.search);
+  const orderId = params.get('order') || localStorage.getItem('mvs_last_order') || '';
+  if (orderId) {
+    document.getElementById('order-id').textContent = orderId;
+    document.getElementById('track-btn').href = `tracking.html?order=${orderId}`;
+  }
+</script>
+</body>
+</html>

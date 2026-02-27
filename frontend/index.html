@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MVS Aqua — Premium Aquarium Store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+<!-- Offers Ticker -->
+<div class="offers-ticker">
+  <div class="offers-ticker-inner">
+    <span>🔥 Free delivery on orders above ₹500</span>
+    <span>🐠 New arrivals every week</span>
+    <span>🌊 Premium quality fish & accessories</span>
+    <span>🎁 Exclusive combo offers available</span>
+    <span>📦 Packed safely with oxygen bags</span>
+    <span>🔥 Free delivery on orders above ₹500</span>
+    <span>🐠 New arrivals every week</span>
+    <span>🌊 Premium quality fish & accessories</span>
+    <span>🎁 Exclusive combo offers available</span>
+    <span>📦 Packed safely with oxygen bags</span>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a class="navbar-brand" href="index.html">
+      <div class="navbar-logo">🐟</div>
+      <h1>MVS <span>Aqua</span></h1>
+    </a>
+    <div class="navbar-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="tracking.html">Track Order</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="navbar-actions">
+      <a href="cart.html" class="cart-icon" title="Cart">
+        🛒
+        <span class="cart-count" style="display:none">0</span>
+      </a>
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">🌊 Charan Aquarium — Now Online</div>
+      <h1>Your Premium Aquatic World Awaits</h1>
+      <p>Discover exotic fish, corals, plants, feeds, and aquarium accessories. Delivered safely to your doorstep with professional aquatic care.</p>
+      <div class="hero-actions">
+        <a href="shop.html" class="btn btn-secondary btn-lg">🐠 Shop Now</a>
+        <a href="about.html" class="btn btn-outline btn-lg" style="color:white;border-color:rgba(255,255,255,0.6)">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section class="section" style="background:white">
+  <div class="container">
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🚚</div>
+        <h3>Safe Delivery</h3>
+        <p>All fish packed with oxygen bags and insulated boxes for safe delivery.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔬</div>
+        <h3>Quality Assured</h3>
+        <p>Every product health-checked before dispatch by our aquatic experts.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">💬</div>
+        <h3>WhatsApp Support</h3>
+        <p>Direct WhatsApp ordering and 24/7 support from our team.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌊</div>
+        <h3>10+ Years Experience</h3>
+        <p>Trusted by thousands of aquarium enthusiasts across India.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Products -->
+<section class="section">
+  <div class="container">
+    <div class="text-center mb-3">
+      <h2 class="section-title">🐠 Featured Products</h2>
+      <p class="section-subtitle">Hand-picked premium selections — updated live by our team</p>
+    </div>
+    <div class="grid-4" id="featured-products">
+      <!-- Loaded by JS -->
+      <div class="card" style="padding:24px;text-align:center"><div class="loader"></div></div>
+      <div class="card" style="padding:24px;text-align:center"><div class="loader"></div></div>
+      <div class="card" style="padding:24px;text-align:center"><div class="loader"></div></div>
+      <div class="card" style="padding:24px;text-align:center"><div class="loader"></div></div>
+    </div>
+    <div class="text-center mt-3">
+      <a href="shop.html" class="btn btn-primary btn-lg">View All Products →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Active Offers -->
+<section class="section" style="background:white">
+  <div class="container">
+    <div class="text-center mb-3">
+      <h2 class="section-title">🎁 Current Offers</h2>
+      <p class="section-subtitle">Limited time deals — updated by admin in real time</p>
+    </div>
+    <div class="grid-3" id="offers-grid">
+      <div style="text-align:center;padding:20px"><div class="loader"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Categories -->
+<section class="section">
+  <div class="container">
+    <div class="text-center mb-3">
+      <h2 class="section-title">Browse by Category</h2>
+    </div>
+    <div class="grid-4">
+      <a href="shop.html?category=fish" class="card" style="padding:28px;text-align:center;text-decoration:none">
+        <div style="font-size:3rem;margin-bottom:10px">🐠</div>
+        <h3 style="color:var(--primary)">Fish</h3>
+        <p style="color:#666;font-size:0.9rem">Tropical, Marine, Freshwater</p>
+      </a>
+      <a href="shop.html?category=plants" class="card" style="padding:28px;text-align:center;text-decoration:none">
+        <div style="font-size:3rem;margin-bottom:10px">🌿</div>
+        <h3 style="color:var(--primary)">Plants</h3>
+        <p style="color:#666;font-size:0.9rem">Live aquatic plants</p>
+      </a>
+      <a href="shop.html?category=accessories" class="card" style="padding:28px;text-align:center;text-decoration:none">
+        <div style="font-size:3rem;margin-bottom:10px">⚙️</div>
+        <h3 style="color:var(--primary)">Accessories</h3>
+        <p style="color:#666;font-size:0.9rem">Filters, lights, pumps</p>
+      </a>
+      <a href="shop.html?category=food" class="card" style="padding:28px;text-align:center;text-decoration:none">
+        <div style="font-size:3rem;margin-bottom:10px">🥣</div>
+        <h3 style="color:var(--primary)">Fish Food</h3>
+        <p style="color:#666;font-size:0.9rem">Pellets, flakes, live food</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>🐟 MVS Aqua</h4>
+        <p style="font-size:0.9rem;line-height:1.6">Premium aquarium store with over a decade of experience. Your trusted partner for all aquatic needs.</p>
+        <div class="social-links">
+          <a href="#" title="WhatsApp">💬</a>
+          <a href="#" title="Instagram">📷</a>
+          <a href="#" title="Facebook">👍</a>
+          <a href="#" title="YouTube">▶️</a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="tracking.html">Track Order</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="shop.html?category=fish">Live Fish</a></li>
+          <li><a href="shop.html?category=plants">Aquatic Plants</a></li>
+          <li><a href="shop.html?category=accessories">Accessories</a></li>
+          <li><a href="shop.html?category=food">Fish Food</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <p style="font-size:0.9rem">📞 +91 98765 43210</p>
+        <p style="font-size:0.9rem;margin-top:6px">📧 info@mvsaqua.com</p>
+        <p style="font-size:0.9rem;margin-top:6px">📍 Hyderabad, Telangana</p>
+        <a href="https://wa.me/919876543210" target="_blank" class="btn btn-secondary btn-sm mt-2">WhatsApp Us 💬</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 MVS Aqua (Charan Aquarium). All rights reserved. Made with 🌊 for aquarium lovers.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/api.js"></script>
+<script src="assets/js/script.js"></script>
+<script>
+// Load featured products
+async function loadFeatured() {
+  const container = document.getElementById('featured-products');
+  try {
+    const data = await ProductAPI.getAll('featured=1&limit=4');
+    if (data.products && data.products.length > 0) {
+      container.innerHTML = data.products.map(p => renderProductCard(p)).join('');
+    } else {
+      // Show demo cards if backend not connected
+      container.innerHTML = demoProducts().map(p => renderProductCard(p)).join('');
+    }
+  } catch {
+    container.innerHTML = demoProducts().map(p => renderProductCard(p)).join('');
+  }
+}
+
+function demoProducts() {
+  return [
+    { id: 1, name: 'Betta Fish', price: 120, original_price: 150, stock: 10, category: 'fish', emoji: '🐟' },
+    { id: 2, name: 'Neon Tetra (10pc)', price: 200, original_price: 250, stock: 20, category: 'fish', emoji: '🐠' },
+    { id: 3, name: 'Java Fern Plant', price: 80, original_price: null, stock: 5, category: 'plants', emoji: '🌿' },
+    { id: 4, name: 'LED Aquarium Light', price: 450, original_price: 600, stock: 8, category: 'accessories', emoji: '💡' }
+  ];
+}
+
+function renderProductCard(p) {
+  const stock = p.stock > 5 ? `<span class="stock-in">✅ In Stock</span>` :
+    p.stock > 0 ? `<span class="stock-low">⚠️ Only ${p.stock} left</span>` :
+    `<span class="stock-out">❌ Out of Stock</span>`;
+  return `
+    <div class="card product-card" onclick="location.href='product.html?id=${p.id}'">
+      <div class="product-img">${p.image ? `<img src="${p.image}" alt="${p.name}">` : (p.emoji || '🐟')}</div>
+      <div class="product-body">
+        <div class="product-name">${p.name}</div>
+        <div class="product-stock">${stock}</div>
+        <div class="product-price">₹${p.price}${p.original_price ? `<span class="original">₹${p.original_price}</span>` : ''}</div>
+        <div class="product-actions">
+          <button class="btn btn-secondary btn-sm" onclick="event.stopPropagation();addToCart({id:${p.id},name:'${p.name}',price:${p.price},image:'${p.image||''}'})">Add to Cart</button>
+          <button class="btn btn-outline btn-sm" onclick="event.stopPropagation();location.href='product.html?id=${p.id}'">View</button>
+        </div>
+      </div>
+    </div>`;
+}
+
+// Load offers
+async function loadOffers() {
+  const container = document.getElementById('offers-grid');
+  try {
+    const data = await OfferAPI.getAll();
+    if (data.offers && data.offers.length > 0) {
+      container.innerHTML = data.offers.map(o => `
+        <div class="card" style="padding:24px">
+          <div style="font-size:2rem;margin-bottom:10px">${o.emoji || '🎁'}</div>
+          <span class="badge badge-accent mb-2">${o.discount_pct || ''}% OFF</span>
+          <h3 style="color:var(--primary);margin-bottom:8px">${o.title}</h3>
+          <p style="color:#666;font-size:0.9rem">${o.description}</p>
+          ${o.code ? `<div class="alert alert-info mt-2">Code: <strong>${o.code}</strong></div>` : ''}
+        </div>`).join('');
+    } else {
+      container.innerHTML = `
+        <div class="card" style="padding:24px">
+          <div style="font-size:2rem;margin-bottom:10px">🚚</div>
+          <span class="badge badge-accent mb-2">OFFER</span>
+          <h3 style="color:var(--primary);margin-bottom:8px">Free Delivery</h3>
+          <p style="color:#666">On all orders above ₹500. No code required!</p>
+        </div>
+        <div class="card" style="padding:24px">
+          <div style="font-size:2rem;margin-bottom:10px">🎁</div>
+          <span class="badge badge-accent mb-2">20% OFF</span>
+          <h3 style="color:var(--primary);margin-bottom:8px">First Order Discount</h3>
+          <p style="color:#666">Get 20% off on your first purchase.</p>
+          <div class="alert alert-info mt-2">Code: <strong>FIRST20</strong></div>
+        </div>
+        <div class="card" style="padding:24px">
+          <div style="font-size:2rem;margin-bottom:10px">📦</div>
+          <span class="badge badge-accent mb-2">BUNDLE</span>
+          <h3 style="color:var(--primary);margin-bottom:8px">Combo Deals</h3>
+          <p style="color:#666">Buy fish + food + accessory combos and save up to 30%.</p>
+        </div>`;
+    }
+  } catch {
+    container.innerHTML = `<div class="alert alert-info">Offers loading... Check back soon!</div>`;
+  }
+}
+
+loadFeatured();
+loadOffers();
+</script>
+</body>
+</html>
